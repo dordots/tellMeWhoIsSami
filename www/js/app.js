@@ -32,21 +32,21 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.randomList', {
+    url: '/randomList',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/randomList.html'
       }
     }
   })
 
-  .state('app.coin', {
-      url: '/coin',
+  .state('app.randomCoin', {
+      url: '/randomCoin',
       views: {
         'menuContent': {
-          templateUrl: 'templates/coin.html',
-          controller: 'CoinCtrl'
+          templateUrl: 'templates/randomCoin.html',
+          controller: 'randomCoinCtrl'
         }
       }
     })
@@ -70,5 +70,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/coin');
+  $urlRouterProvider.otherwise('/app/randomCoin');
 });

@@ -55,6 +55,6 @@ angular.module('starter.controllers', [])
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 })
 
-.controller('CoinCtrl', function($scope) {
+.controller('randomCoinCtrl', function($scope) {
   $scope.coinImgSrc ="../img/coin.png";
 });
