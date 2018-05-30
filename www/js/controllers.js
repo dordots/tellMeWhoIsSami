@@ -15,7 +15,6 @@ angular.module('starter.controllers', [])
     var max=1;
     var min=0;
     var randSide =Math.floor(Math.random() * (max - min + 1)) + min;
-    console.log(randSide);
     if(randSide==1) {
       $scope.coinSide=true
     }
