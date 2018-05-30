@@ -31,44 +31,33 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     templateUrl: 'templates/menu.html',
     controller: 'AppCtrl'
   })
-
   .state('app.randomList', {
     url: '/randomList',
     views: {
       'menuContent': {
-        templateUrl: 'templates/randomList.html'
+        templateUrl: 'templates/randomList.html',
+        controller: 'randomListCtrl',
+        controllerAs: 'vm'
       }
     }
   })
-
   .state('app.randomCoin', {
       url: '/randomCoin',
       views: {
         'menuContent': {
           templateUrl: 'templates/randomCoin.html',
-          controller: 'randomCoinCtrl'
+          controller: 'randomCoinCtrl',
+          controllerAs: 'vm'
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
+    .state('app.home', {
+      url: '/home',
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
+          templateUrl: 'templates/home.html'      
         }
       }
     })
-
-  .state('app.single', {
-    url: '/playlists/:playlistId',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
-      }
-    }
-  });
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/randomCoin');
+  $urlRouterProvider.otherwise('/app/home');
 });

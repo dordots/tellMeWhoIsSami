@@ -40,21 +40,19 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
-
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('randomCoinCtrl', function($scope) {
+  $scope.coinImgSrc ="../img/coin.png";
+})
+.controller('randomListCtrl', function($scope) {
+  
+})
+.service('MunchesTeamMember', function($scope) {
+  $scope.teamMembers = [
+    { title: 'Lior Sapir', id: 1 },
+    { title: 'Naor Sabag', id: 2 },
+    { title: 'Ido rahamim', id: 3 },
+    { title: 'Lev David', id: 4 },
+    { title: 'Dor Saban', id: 5 }
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-})
-
-.controller('randomCoinCtrl', function($scope) {
-  $scope.coinImgSrc ="../img/coin.png";
-});
