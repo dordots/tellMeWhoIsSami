@@ -36,8 +36,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: 'templates/randomList.html',
-        controller: 'randomListCtrl',
-        controllerAs: 'vm'
+        controller: 'randomListCtrl'
       }
     }
   })

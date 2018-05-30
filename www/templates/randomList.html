@@ -1,35 +1,15 @@
 <ion-view view-title="Random List">
   <ion-content>    
-    <button class="button button-block button-positive">
+    <button class="button button-block button-positive" ng-click="returnRandomMember()">
       Click here to find the Sami team Member
     </button>
+        
     <div class="list">
-      
-          <a class="item item-thumbnail-left">
-            <img src="./img/alien.png">
-            <h2>Lev David</h2>
-            <p>Tel-Aviv</p>
+          <a class="item item-thumbnail-left" ng-repeat="member in teamMembers" ng-class="{'activeList': member.active}">
+            <img ng-src="{{member.imgSrc}}">
+            <h2>{{member.name}}</h2>
+            <p>{{member.city}}</p>
           </a>
-          <a class="item item-thumbnail-left">
-            <img src="./img/angry.png">
-            <h2>Lior Sapir</h2>
-            <p>Ashkelon</p>
-          </a>
-          <a class="item item-thumbnail-left">
-            <img src="./img/smiley.png">
-            <h2>Naor Sabag</h2>
-            <p>Moreshet</p>
-          </a>
-          <a class="item item-thumbnail-left">
-            <img src="./img/tongue.png">
-            <h2>Ido Rahamim</h2>
-            <p>Kiryat Gat</p>
-          </a>
-          <a class="item item-thumbnail-left">
-            <img src="./img/geek.png">
-            <h2>Dor Saban</h2>
-            <p>Sharsheret</p>
-          </a>
-            </div>
+    </div>
   </ion-content>  
  </ion-view>
