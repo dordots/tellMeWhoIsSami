@@ -53,4 +53,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+})
+
+.controller('CoinCtrl', function($scope) {
+  $scope.coinImgSrc ="../img/coin.png";
 });

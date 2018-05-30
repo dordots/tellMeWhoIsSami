@@ -1,1 +1,7 @@
 /* Empty. Add your own CSS if you like */
+#coinImg{
+  width: 25vw;
+  height: 50vh;
+  margin: 0 auto;
+  display: block;
+}
