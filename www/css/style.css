@@ -1,7 +1,10 @@
 /* Empty. Add your own CSS if you like */
-#coinImg{
-  width: 25vw;
-  height: 50vh;
-  margin: 0 auto;
-  display: block;
+.side-menu-headline-color{
+    background-color: yellow;
+}
+.coin-size{
+    width: 30%;
+    height: 30%;
+    margin-left: 35%;
+    margin-top: 10%;
 }
