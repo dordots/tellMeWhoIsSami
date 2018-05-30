@@ -1,6 +1,9 @@
 <ion-view view-title="Coin">
   <ion-content>
-    <h1 class="button button-block button-positive">Tap on the Coin to flip</h1>
-    <img class="coin-size" id="coinImg" ng-src="{{coinImgSrc}}">
+    <h1 ng-click="returnRandomSideOfCoin()" class="button button-block button-positive">Tap on the Coin to flip</h1>
+    
+    <img ng-show = "coinSide" class="coin-size" id="coinImg" ng-src="{{bitCoinSrc}}">
+    <img ng-hide = "coinSide" class="coin-size" id="coinImg" ng-src="{{dollarCoinSrc}}">
+
   </ion-content>
 </ion-view>

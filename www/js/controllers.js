@@ -6,6 +6,24 @@ angular.module('starter.controllers', [])
 })
 .controller('randomCoinCtrl', function($scope) {
   $scope.coinImgSrc ="../img/coin.png";
+  $scope.bitCoinSrc="../img/bitCoin.png";
+  $scope.dollarCoinSrc="../img/dollarCoin.png"
+ 
+  $scope.coinSide = false;
+
+  $scope.returnRandomSideOfCoin = function(){
+    var max=1;
+    var min=0;
+    var randSide =Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(randSide);
+    if(randSide==1) {
+      $scope.coinSide=true
+    }
+    else {
+      $scope.coinSide=false
+    };
+  };
+
 })
 .controller('randomListCtrl', function($scope) {
   $scope.teamMembers = [
@@ -23,6 +41,7 @@ angular.module('starter.controllers', [])
     });
     randMember.active = true;
   };
+
 
 });
 
